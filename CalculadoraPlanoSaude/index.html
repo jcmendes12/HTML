@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Custo-Benefício de Planos de Saúde</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Comparar Planos de Saúde</h1>
+    <form id="health-plan-form">
+        <label for="age">Idade:</label>
+        <input type="number" id="age" name="age" required><br>
+        <label for="weight">Peso (kg):</label>
+        <input type="number" id="weight" name="weight" required><br>
+        <label for="height">Altura (cm):</label>
+        <input type="number" id="height" name="height" required><br>
+        <button type="button" onclick="comparePlans()">Comparar</button>
+    </form>
+
+    <h2>Resultado</h2>
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
